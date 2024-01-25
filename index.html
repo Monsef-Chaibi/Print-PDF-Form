@@ -32,6 +32,8 @@
     
 </head>
 <body dir="rtl" style="font-family: 'Readex Pro', sans-serif;">
+    <script src="script.js"></script>
+
     <div class="flex items-center mt-5 mr-12">
         <img src="logo.png" alt="logo">
         <p class="mr-10 font-bold text-xl text-green-800 border-b-4 border-green-800 p-3">الأوقاف</p>
@@ -61,29 +63,29 @@
             <div class="flex gap-12 mt-12 mr-5">
                 <div class="flex-1">
                     <label for="input1" class="block text-sm font-medium text-gray-700 w-60 mr-2">اسم صاحب الوقف </label>
-                    <input type="text" id="input1" name="input1" class="mt-1 p-2 border rounded-md w-full">
+                    <input type="text" id="in1" name="input1" class="mt-1 p-2 border rounded-md w-full">
                 </div>
                 <div class="flex-1">
                     <label for="input2" class="block text-sm font-medium text-gray-700 w-20 mr-2">الجنسية</label>
-                    <input type="text" id="input2" name="input2" class="mt-1 p-2 border rounded-md w-full">
+                    <input type="text" id="in2" name="input2" class="mt-1 p-2 border rounded-md w-full">
                 </div>
                 <div class="flex-1">
                     <label for="input3" class="block text-sm font-medium text-gray-700 w-40 mr-2"> رقم البطاقة المدنية</label>
-                    <input type="text" id="input3" name="input3" class="mt-1 p-2 border rounded-md w-full">
+                    <input type="text" id="in3" name="input3" class="mt-1 p-2 border rounded-md w-full">
                 </div>
             </div>
             <div class="flex gap-12 mt-5 mr-5">
                 <div class="flex-1">
                     <label for="input1" class="block text-sm font-medium text-gray-700 w-60 mr-2">اسم صاحب الوقف </label>
-                    <input type="text" id="input1" name="input1" class="mt-1 p-2 border rounded-md w-50">
+                    <input type="text" id="in4" name="input1" class="mt-1 p-2 border rounded-md w-full">
                 </div>
                 <div class="flex-1">
                     <label for="input2" class="block text-sm font-medium text-gray-700 w-20 mr-2">الجنسية</label>
-                    <input type="text" id="input2" name="input2" class="mt-1 p-2 border rounded-md w-50">
+                    <input type="text" id="in5" name="input2" class="mt-1 p-2 border rounded-md w-full">
                 </div>
                 <div class="flex-1">
                     <label for="input3" class="block text-sm font-medium text-gray-700 w-40 mr-2"> رقم البطاقة المدنية</label>
-                    <input type="text" id="input3" name="input3" class="mt-1 p-2 border rounded-md w-50">
+                    <input type="text" id="in6" name="input3" class="mt-1 p-2 border rounded-md w-full">
                 </div>
             </div>
             <div class="flex gap-12 mt-12 mr-5">
@@ -139,11 +141,9 @@
                     <label for="input1" class="block text-sm font-medium text-gray-700 w-full mr-2">نص الوقوف كاملا </label>
                     <input style="width:1000px" type="text" id="input1" name="input1" class="mt-1 p-2 border rounded-md h-60">
                 </div>
-              
-            </div>
-            
+            </div>  
         </div>
-        <div class="custom-flex-item-40">
+        <div class="custom-flex-item-40 nr-2">
             <div class="flex flex-row items-center justify-center mt-12 gap-12">
                 <div class="w-60 text-center">
                     <p>دولة الكويت</p>
@@ -165,7 +165,19 @@
                     </div>
                 </div>
             </div>
-            <p class="text-center">وقف</p>
+            <p style="font-size: 50px;font-weight: bold;" class="text-center text-green-700 mt-12">وقـــــــــــــــــــف</p>
+            <div style="margin-right: 10%; margin-top: 5%;" class="flex flex-row items-center space-x-2">
+                <p style="width: 40%;">حضر لدى ادارة التوتيقات الشرعية لسيد :</p>
+                <p style="width: 30%;" id="out1"></p>
+                <p>( <span id="out2"> </span> الجنسية  )</p>
+            </div>
+            <p style="margin-right: 10%;margin-top: 1%;" >ب.م رقم: <span id="out3"></span></p>
+            <div style="margin-right: 10%; margin-top: 1%;" class="flex flex-row items-center space-x-2">
+                <p style="width:35%;">و السيدة: <span id="out4"></span></p>
+                <p>( <span id="out5"> </span> الجنسية  )</p>
+                <p >ب.م رقم: <span id="out6"></span></p>
+            </div>
+            <p>و أقرو وهما في حل صحتهما و كمال عقلهما قائلان </p>
         </div>
     </div>
         
