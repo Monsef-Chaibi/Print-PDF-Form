@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 function printDiv() {
     var divContents = document.getElementById("print").innerHTML;
-    var printWindow = window.open('', '', 'height=600, width=800');
+    var printWindow = window.open('', '', 'height=600, width=1000');
 
     // Include Tailwind CSS or other required styles
     printWindow.document.write(`
@@ -32,7 +32,7 @@ function generatePDF() {
     // Check if the form element exists
     if (formElement) {
         html2pdf(formElement, {
-            margin: 10,
+            margin: 5,
             filename: 'generated.pdf',
             image: { type: 'jpeg', quality: 0.98 },
             html2canvas: { scale: 2 },
