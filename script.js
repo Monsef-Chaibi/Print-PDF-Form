@@ -32,10 +32,16 @@ function generatePDF() {
     // Check if the form element exists
     if (formElement) {
         html2pdf(formElement, {
-            margin: 5,
+            margin: 2,
             filename: 'generated.pdf',
             image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2 },
+            html2canvas: {
+                 scale: 2 ,
+                 onclone: (doc) => {
+                    // Set font size in the cloned document
+                    doc.documentElement.style.fontSize = '15px';
+                }
+            },
             jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
         });
     } else {
