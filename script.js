@@ -7,11 +7,32 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 function printDiv() {
     var divContents = document.getElementById("print").innerHTML;
-    var a = window.open('', '', 'height=500, width=500');
-    a.document.write('<html>');
-    a.document.write('<body>');
-    a.document.write(divContents);
-    a.document.write('</body></html>');
-    a.document.close();
-    a.print();
+    var printWindow = window.open('', '', 'height=600, width=800');
+
+    // Include Tailwind CSS or other required styles
+    printWindow.document.write(`
+        <html>
+            <head>
+                <title>Print</title>
+                <script src="https://cdn.tailwindcss.com"></script>
+            </head>
+            <body dir="rtl">
+                ${divContents}
+            </body>
+        </html>
+    `);
+    printWindow.document.close();
+    setTimeout(function () {
+        printWindow.print();
+    }, 250); // Added delay to ensure styles are loaded
+}
+function saveDivAsPDF() {
+    var element = document.getElementById('print'); // Replace 'print' with the ID of your div
+    html2pdf(element, {
+        margin:       10,
+        filename:     'document.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    });
 }
