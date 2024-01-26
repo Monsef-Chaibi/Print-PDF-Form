@@ -28,11 +28,24 @@
             flex: 1;
             margin-right: 5px; /* Adjust the margin as needed */
         }
+        body {
+            background-image: url('qqq.jpg');
+            background-size: cover;  /* Cover the entire page */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            
+        }
+        html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
     </style>
     
 </head>
 <body dir="rtl" style="font-family: 'Readex Pro', sans-serif;">
-    <script src="script.js"></script>
+    <img src="qqq.jpg" alt="">
+    <!-- <script src="script.js"></script>
 
     <div class="flex items-center mt-5 mr-12">
         <img src="logo.png" alt="logo">
@@ -44,172 +57,175 @@
         </button>
     </div>
     <hr>
-    <div class="custom-flex-container">
+    <div style="display: flex;">
         <div class="custom-flex-item-60">
-            <div class="flex gap-4 mt-8 mr-5">
+            <div class="flex gap-2 mt-8 mr-5">
                 <div class="">
-                    <label for="input1" class="block text-sm font-medium text-gray-700 w-40 mr-2">رقم الملف</label>
-                    <input type="text" id="in12" name="input1" class="mt-1 p-2 border rounded-md w-40">
+                    <label for="input1" class="block text-sm font-medium text-gray-500 w-40 mr-2">رقم الملف</label>
+                    <input type="text" id="in12" name="input1" class="mt-1 w-50 p-2 border rounded-md">
                 </div>
                 <div class="">
-                    <label for="input2" class="block text-sm font-medium text-gray-700 w-40 mr-2">التاريخ الميلادي</label>
+                    <label for="input2" class="block text-sm font-medium text-gray-500 w-40 mr-2">التاريخ الميلادي</label>
                     <input type="text" id="in13" name="input2" class="mt-1 p-2 border rounded-md w-40">
                 </div>
                 <div class="">
-                    <label for="input3" class="block text-sm font-medium text-gray-700 w-40 mr-2">التاريخ الهجري</label>
+                    <label for="input3" class="block text-sm font-medium text-gray-500 w-40 mr-2">التاريخ الهجري</label>
                     <input type="text" id="in14" name="input3" class="mt-1 p-2 border rounded-md w-40">
                 </div>
             </div>
-            <div class="flex gap-4 mt-4 mr-5">
+            <div class="flex gap-4 mt-12 mr-5">
                 <div class="">
-                    <label for="input1" class="block text-sm font-medium text-gray-700 w-40 mr-2">اسم صاحب الوقف </label>
-                    <input type="text" id="in1" name="input1" class="mt-1 p-2 border rounded-md w-40">
+                    <label for="input1" class="block text-sm font-medium text-gray-500 w-40 mr-2">اسم صاحب الوقف </label>
+                    <input type="text" id="in1" name="input1" class="mt-1 p-2 border rounded-md w-60">
                 </div>
                 <div class="">
-                    <label for="input2" class="block text-sm font-medium text-gray-700 w-20 mr-2">الجنسية</label>
+                    <label for="input2" class="block text-sm font-medium text-gray-500 w-20 mr-2">الجنسية</label>
                     <input type="text" id="in2" name="input2" class="mt-1 p-2 border rounded-md w-40">
                 </div>
                 <div class="">
-                    <label for="input3" class="block text-sm font-medium text-gray-700 w-40 mr-2"> رقم البطاقة المدنية</label>
+                    <label for="input3" class="block text-sm font-medium text-gray-500 w-40 mr-2"> رقم البطاقة المدنية</label>
                     <input type="text" id="in3" name="input3" class="mt-1 p-2 border rounded-md w-40">
                 </div>
             </div>
             <div class="flex gap-4 mt-5 mr-5">
                 <div class="">
-                    <label for="input1" class="block text-sm font-medium text-gray-700 w-40 mr-2">اسم صاحب الوقف </label>
-                    <input type="text" id="in4" name="input1" class="mt-1 p-2 border rounded-md w-40">
+                    <label for="input1" class="block text-sm font-medium text-gray-500 w-40 mr-2">اسم صاحب الوقف </label>
+                    <input type="text" id="in4" name="input1" class="mt-1 p-2 border rounded-md w-60">
                 </div>
                 <div class="">
-                    <label for="input2" class="block text-sm font-medium text-gray-700 w-20 mr-2">الجنسية</label>
+                    <label for="input2" class="block text-sm font-medium text-gray-500 w-20 mr-2">الجنسية</label>
                     <input type="text" id="in5" name="input2" class="mt-1 p-2 border rounded-md w-40">
                 </div>
                 <div class="">
-                    <label for="input3" class="block text-sm font-medium text-gray-700 w-40 mr-2"> رقم البطاقة المدنية</label>
+                    <label for="input3" class="block text-sm font-medium text-gray-500 w-40 mr-2"> رقم البطاقة المدنية</label>
                     <input type="text" id="in6" name="input3" class="mt-1 p-2 border rounded-md w-40">
                 </div>
             </div>
-            <div class="flex gap-4 mt-4 mr-5">
+            <div class="flex gap-4 mt-12 mr-5">
                 <div class="">
-                    <label for="input1" class="block text-sm font-medium text-gray-700 w-40 mr-2"> الوقف </label>
+                    <label for="input1" class="block text-sm font-medium text-gray-500 w-40 mr-2"> الوقف </label>
                     <input type="text" id="input1" name="input1" class="mt-1 p-2 border rounded-md w-40">
                 </div>
                 <div class="">
-                    <label for="input2" class="block text-sm font-medium text-gray-700 w-40 mr-2">المنطقة</label>
+                    <label for="input2" class="block text-sm font-medium text-gray-500 w-40 mr-2">المنطقة</label>
                     <input type="text" id="input2" name="input2" class="mt-1 p-2 border rounded-md w-40">
                 </div>
                 <div class="">
-                    <label for="input3" class="block text-sm font-medium text-gray-700 w-40 mr-2"> رقم القطعة  </label>
+                    <label for="input3" class="block text-sm font-medium text-gray-500 w-40 mr-2"> رقم القطعة  </label>
                     <input type="text" id="input3" name="input3" class="mt-1 p-2 border rounded-md w-40">
                 </div>
             </div>
             <div class="flex gap-4 mt-5 mr-5">
                 <div class="">
-                    <label for="input1" class="block text-sm font-medium text-gray-700 w-40 mr-2"> رقم القسيمة </label>
+                    <label for="input1" class="block text-sm font-medium text-gray-500 w-40 mr-2"> رقم القسيمة </label>
                     <input type="text" id="input1" name="input1" class="mt-1 p-2 border rounded-md w-40">
                 </div>
                 <div class="">
-                    <label for="input2" class="block text-sm font-medium text-gray-700 w-40 mr-2">المساحة</label>
+                    <label for="input2" class="block text-sm font-medium text-gray-500 w-40 mr-2">المساحة</label>
                     <input type="text" id="input2" name="input2" class="mt-1 p-2 border rounded-md w-40">
                 </div>
                 <div class="">
-                    <label for="input3" class="block text-sm font-medium text-gray-700 w-40 mr-2"> رقم المخطط  </label>
+                    <label for="input3" class="block text-sm font-medium text-gray-500 w-40 mr-2"> رقم المخطط  </label>
                     <input type="text" id="input3" name="input3" class="mt-1 p-2 border rounded-md w-40">
                 </div>
             </div>
-            <div class="flex gap-4 mt-4 mr-5">
+            <div class="flex gap-4 mt-12 mr-5">
                 <div class="">
-                    <label for="input1" class="block text-sm font-medium text-gray-700 w-40 mr-2"> الشاهد الاول  </label>
+                    <label for="input1" class="block text-sm font-medium text-gray-500 w-40 mr-2"> الشاهد الاول  </label>
                     <input type="text" id="in8" name="input1" class="mt-1 p-2 border rounded-md w-40">
                 </div>
                 <div class="">
-                    <label for="input2" class="block text-sm font-medium text-gray-700 w-40 mr-2">رقم البطاقة المدنية</label>
+                    <label for="input2" class="block text-sm font-medium text-gray-500 w-40 mr-2">رقم البطاقة المدنية</label>
                     <input type="text" id="in9" name="input2" class="mt-1 p-2 border rounded-md w-40">
                 </div>
             </div>
             <div class="flex gap-4 mt-5 mr-5">
                 <div class="">
-                    <label for="input1" class="block text-sm font-medium text-gray-700 w-40 mr-2"> الشاهد التاني  </label>
+                    <label for="input1" class="block text-sm font-medium text-gray-500 w-40 mr-2"> الشاهد التاني  </label>
                     <input type="text" id="in10" name="input1" class="mt-1 p-2 border rounded-md w-40">
                 </div>
                 <div class="">
-                    <label for="input2" class="block text-sm font-medium text-gray-700 w-40 mr-2">رقم البطاقة المدنية</label>
+                    <label for="input2" class="block text-sm font-medium text-gray-500 w-40 mr-2">رقم البطاقة المدنية</label>
                     <input type="text" id="in11" name="input2" class="mt-1 p-2 border rounded-md w-40">
                 </div>
             </div>
             <div class="flex gap-4 mt-12 mr-5">
                 <div class="">
-                    <label for="input1" class="block text-sm font-medium text-gray-700 w-40 mr-2">نص الوقوف كاملا </label>
+                    <label for="input1" class="block text-sm font-medium text-gray-500 w-40 mr-2">نص الوقوف كاملا </label>
                     <input style="width:700px" type="text" id="in7" name="input1" class="mt-1 p-2 border rounded-md h-40 w-40">
                 </div>
             </div>  
         </div>
-        <div class="custom-flex-item-40 nr-2 " id="print">
-            <div class="flex flex-row items-center justify-center gap-4">
-                <div class="w-40 text-center">
-                    <p>دولة الكويت</p>
-                    <p>وزارة العدل</p>
-                    <p>ادارة التوتيقات الشرعية</p>
-                </div>
-                <div class="w-40 text-center flex flex-col items-center">
-                    <p>بسم الله الرحمن الرحيم</p>
-                    <img src="logo.png" alt="" class="m-auto mt-2 h-20">
-                </div>
-                <div class="w-60 text-center">
-                    <p>State of Kuwait</p>
-                    <p>Ministry of Justice</p>
-                    <p>Legal Authentication Depart</p>
-                    <div class="text-right mt-5 border-4 p-2 rounded border-black">
-                        <p>الرقم : <span id="out12"></span></p>
-                        <p>التاريخ : <span id="out13"></span></p>
-                        <p>الموافق : <span id="out14"></span></p>
+        <div style="border: 2px solid gray;padding: 30px;border-radius: 20px;margin-top: 30px;width: 900px;">
+            <div class="custom-flex-item-40 nr-2 " style="width: 900px;" id="print">
+                <div class="flex flex-row items-center justify-center gap-4">
+                    <div class="w-40 text-center">
+                        <p>دولة الكويت</p>
+                        <p>وزارة العدل</p>
+                        <p>ادارة التوتيقات الشرعية</p>
+                    </div>
+                    <div class="w-40 text-center flex flex-col items-center">
+                        <p>بسم الله الرحمن الرحيم</p>
+                        <img src="logo.png" alt="" class="m-auto mt-2 h-20">
+                    </div>
+                    <div class="w-60 text-center">
+                        <p>State of Kuwait</p>
+                        <p>Ministry of Justice</p>
+                        <p>Legal Authentication Depart</p>
+                        <div class="text-right mt-5 border-4 p-2 rounded border-black">
+                            <p>الرقم : <span id="out12"></span></p>
+                            <p>التاريخ : <span id="out13"></span></p>
+                            <p>الموافق : <span id="out14"></span></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <p style="font-size: 50px;font-weight: bold;" class="text-center text-green-700 mt-2">وقـــــــــــــــــــف</p>
+                <p style="font-size: 50px;font-weight: bold;" class="text-center text-green-700 mt-2">وقـــــــــــــــــــف</p>
+                    <div style=" margin-top: 1%;" class="flex flex-row items-center space-x-2">
+                        <p style="font-size: 18px;">حضر لدى ادارة التوتيقات الشرعية لسيد  : </p>
+                        <p style="width: 25%; margin-right: 10px;" id="out1">  </p>
+                        <p>( <span id="out2"> </span> الجنسية  )</p>
+                    </div>
+                <p style="margin-top: 1%;" >ب.م رقم: <span id="out3"></span></p>
                 <div style=" margin-top: 1%;" class="flex flex-row items-center space-x-2">
-                    <p style="">حضر لدى ادارة التوتيقات الشرعية لسيد  : </p>
-                    <p style="width: 30%; margin-right: 10px;" id="out1">  </p>
-                    <p>( <span id="out2"> </span> الجنسية  )</p>
+                    <p style="width:35%;">و السيدة: <span id="out4"></span></p>
+                    <p>( <span id="out5"> </span> الجنسية  )</p>
+                    <p >ب.م رقم: <span id="out6"></span></p>
                 </div>
-            <p style="margin-top: 1%;" >ب.م رقم: <span id="out3"></span></p>
-            <div style=" margin-top: 1%;" class="flex flex-row items-center space-x-2">
-                <p style="width:35%;">و السيدة: <span id="out4"></span></p>
-                <p>( <span id="out5"> </span> الجنسية  )</p>
-                <p >ب.م رقم: <span id="out6"></span></p>
-            </div>
-            <p style=" margin-top: 1%;">و أقرو وهما في حل صحتهما و كمال عقلهما قائلان :</p>
-            <p style=" margin-top: 1%;" class="h-20" id="out7"></p>
-            <p style=" margin-top: 5%;">و شهد على تعريف الواقفان و اقرارهما بذلك كل من /</p>
-            <div style=" margin-top: 1%;" class="flex flex-row items-center space-x-2">
-                <p>١-</p>
-                <p style="width: 50%;" id="out8"></p>
-                <p>يحمل بطاقة مدنية رقم ( <span id="out9"></span> )</p>
-            </div>
-            <div style=" margin-top: 1%;" class="flex flex-row items-center space-x-2">
-                <p>٢-</p>
-                <p style="width: 50%;" id="out10"></p>
-                <p>يحمل بطاقة مدنية رقم ( <span id="out11"></span> )</p>
-            </div>
-            <p style=" margin-top: 5%;">وبناء على طلب الواقفان حرر هذا الاعلام.</p>
-            <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 3%;" class="flex-row space-x-2">
-                <p style="flex: 1; text-align: center;">الواقفان</p>
-                <p style="flex: 1; text-align: center;">الشاهد الأول</p>
-                <p style="flex: 1; text-align: center;">الشاهد التاني</p>
-            </div>
-            <p style=" margin-top: 15%;text-align: left; margin-left: 8%;">قاضي ادارة التوقيقات الشرعية </p>
-            <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 8%;" class="flex-row space-x-2 gap-4">
-                <button type="button" onclick="printDiv()" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                    طباعة الملف
-                </button>                
-                <button type="button" onclick="generatePDF()" class="border border-green-500 text-green-500 hover:bg-green-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 font-bold py-2 px-4 rounded">
-                    حفض الملف PDF
-                </button>
-                  
+                <p style=" margin-top: 1%;">و أقرو وهما في حل صحتهما و كمال عقلهما قائلان :</p>
+                <p style=" margin-top: 1%;" class="h-20" id="out7"></p>
+                <p style=" margin-top: 5%;">و شهد على تعريف الواقفان و اقرارهما بذلك كل من /</p>
+                <div style=" margin-top: 1%;" class="flex flex-row items-center space-x-2">
+                    <p>١-</p>
+                    <p style="width: 50%;" id="out8"></p>
+                    <p>يحمل بطاقة مدنية رقم ( <span id="out9"></span> )</p>
+                </div>
+                <div style=" margin-top: 1%;" class="flex flex-row items-center space-x-2">
+                    <p>٢-</p>
+                    <p style="width: 50%;" id="out10"></p>
+                    <p>يحمل بطاقة مدنية رقم ( <span id="out11"></span> )</p>
+                </div>
+                <p style=" margin-top: 5%;">وبناء على طلب الواقفان حرر هذا الاعلام.</p>
+                <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 3%;" class="flex-row space-x-2">
+                    <p style="flex: 1; text-align: center;">الواقفان</p>
+                    <p style="flex: 1; text-align: center;">الشاهد الأول</p>
+                    <p style="flex: 1; text-align: center;">الشاهد التاني</p>
+                </div>
+                <p style=" margin-top: 15%;text-align: left; margin-left: 8%;">قاضي ادارة التوقيقات الشرعية </p>
             </div>
         </div>
+        
     </div>
     
-   
+    <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 8%;margin-right: 22%;max-height: 1px;" class="flex-row space-x-2 mb-12 gap-4">
+        <button type="button" onclick="printDiv()" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            طباعة الملف
+        </button>                
+        <button type="button" onclick="generatePDF()" class="border border-green-500 text-green-500 hover:bg-green-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 font-bold py-2 px-4 rounded">
+            حفض الملف PDF
+        </button>
+        
+    </div>
+    -->
     
 </body>
 </html>
